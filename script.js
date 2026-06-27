@@ -139,17 +139,13 @@ const chatInput = document.getElementById('chatInput');
 const chatMessages = document.getElementById('chatMessages');
 
 if (nameSection && nameForm && chatSection && chatForm && chatInput && chatMessages) {
-  const savedName = localStorage.getItem('chat-username');
-  if (savedName) {
-    nameSection.style.display = 'none';
-    chatSection.style.display = 'block';
-  }
+  let currentName = null;
 
   nameForm.addEventListener('submit', event => {
     event.preventDefault();
     const name = nameInput.value.trim();
     if (!name) return;
-    localStorage.setItem('chat-username', name);
+    currentName = name;
     nameSection.style.display = 'none';
     chatSection.style.display = 'block';
     chatInput.focus();
@@ -177,7 +173,7 @@ if (nameSection && nameForm && chatSection && chatForm && chatInput && chatMessa
     event.preventDefault();
     const text = chatInput.value.trim();
     if (!text) return;
-    const name = localStorage.getItem('chat-username') || 'אנונימי';
+    const name = currentName || 'אנונימי';
     push(ref(db, 'chat'), { text, name, timestamp: Date.now() });
     chatInput.value = '';
   });

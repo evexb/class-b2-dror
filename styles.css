@@ -294,6 +294,15 @@ img {
   font-size: 0.82rem;
 }
 
+.chat-username-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .chat-message.mine {
   background: #dbeafe;
   align-self: flex-end;
