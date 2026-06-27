@@ -129,12 +129,32 @@ if (classImageGallery) {
   });
 }
 
-// Chat – real-time via Firebase
+// Chat – real-time via Firebase, with name selection
+const nameSection = document.getElementById('nameSection');
+const nameForm = document.getElementById('nameForm');
+const nameInput = document.getElementById('nameInput');
+const chatSection = document.getElementById('chatSection');
 const chatForm = document.getElementById('chatForm');
 const chatInput = document.getElementById('chatInput');
 const chatMessages = document.getElementById('chatMessages');
 
-if (chatForm && chatInput && chatMessages) {
+if (nameSection && nameForm && chatSection && chatForm && chatInput && chatMessages) {
+  const savedName = localStorage.getItem('chat-username');
+  if (savedName) {
+    nameSection.style.display = 'none';
+    chatSection.style.display = 'block';
+  }
+
+  nameForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const name = nameInput.value.trim();
+    if (!name) return;
+    localStorage.setItem('chat-username', name);
+    nameSection.style.display = 'none';
+    chatSection.style.display = 'block';
+    chatInput.focus();
+  });
+
   onValue(ref(db, 'chat'), snapshot => {
     chatMessages.innerHTML = '';
     if (snapshot.exists()) {
@@ -142,7 +162,11 @@ if (chatForm && chatInput && chatMessages) {
       messages.forEach(msg => {
         const div = document.createElement('div');
         div.className = 'chat-message';
-        div.textContent = msg.text;
+        const nameEl = document.createElement('strong');
+        nameEl.className = 'chat-name';
+        nameEl.textContent = (msg.name || 'אנונימי') + ':';
+        div.appendChild(nameEl);
+        div.appendChild(document.createTextNode(' ' + msg.text));
         chatMessages.appendChild(div);
       });
     }
@@ -153,7 +177,8 @@ if (chatForm && chatInput && chatMessages) {
     event.preventDefault();
     const text = chatInput.value.trim();
     if (!text) return;
-    push(ref(db, 'chat'), { text, timestamp: Date.now() });
+    const name = localStorage.getItem('chat-username') || 'אנונימי';
+    push(ref(db, 'chat'), { text, name, timestamp: Date.now() });
     chatInput.value = '';
   });
 }

@@ -289,6 +289,11 @@ img {
   align-self: flex-start;
 }
 
+.chat-name {
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+}
+
 .chat-message.mine {
   background: #dbeafe;
   align-self: flex-end;

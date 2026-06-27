@@ -36,12 +36,21 @@
             הדף הזה נועד בשביל שיתוף דברים פשוטים, תגובות, שאלות או ברכות מהכיתה.
           </p>
           <a href="index.html" class="btn btn-secondary">חזרה לדף הבית</a>
-          <div class="chat-window">
-            <div id="chatMessages" class="chat-messages"></div>
-            <form id="chatForm" class="chat-form">
-              <input id="chatInput" type="text" placeholder="כתוב הודעה..." autocomplete="off" required />
-              <button type="submit" class="btn btn-primary">שלח</button>
+          <div id="nameSection" class="chat-window">
+            <p>בחר שם להצגה בצ'אט:</p>
+            <form id="nameForm" class="chat-form">
+              <input id="nameInput" type="text" placeholder="השם שלך..." autocomplete="off" required maxlength="30" />
+              <button type="submit" class="btn btn-primary">כניסה לצ'אט</button>
             </form>
+          </div>
+          <div id="chatSection" style="display:none;">
+            <div class="chat-window">
+              <div id="chatMessages" class="chat-messages"></div>
+              <form id="chatForm" class="chat-form">
+                <input id="chatInput" type="text" placeholder="כתוב הודעה..." autocomplete="off" required />
+                <button type="submit" class="btn btn-primary">שלח</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
