@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>דף מנהל | כיתה ב2</title>
+    <link rel="stylesheet" href="styles.css?v=20260627" />
+  </head>
+  <body>
+    <header class="hero small-hero">
+      <nav class="navbar">
+        <a href="index.html" class="brand">כיתה ב2</a>
+      </nav>
+
+      <div class="hero-content page-content">
+        <div class="hero-copy">
+          <p class="eyebrow">דף מנהלת</p>
+          <h1>בחרו תמונה ראשית לאתר</h1>
+          <a href="index.html" class="btn btn-secondary">חזרה לדף הבית</a>
+          <div class="admin-panel">
+            <h3>תמונה ראשית</h3>
+            <input id="adminHeroImageInput" type="file" accept="image/*" />
+            <button id="adminSaveButton" class="btn btn-primary">שמור תמונה ראשית</button>
+            <p id="adminMessage" class="admin-message"></p>
+          </div>
+          <div class="admin-panel">
+            <h3>קישורים לפעילויות</h3>
+            <div class="admin-link-input">
+              <label>שירטונים של יצירות</label>
+              <input id="adminScreencastLink" type="url" placeholder="https://example.com" />
+            </div>
+            <div class="admin-link-input">
+              <label>קישורים לזומים</label>
+              <input id="adminZoomLink" type="url" placeholder="https://example.com" />
+            </div>
+            <div class="admin-link-input">
+              <label>קישורים למשחקים</label>
+              <input id="adminGamesLink" type="url" placeholder="https://example.com" />
+            </div>
+            <button id="adminActivityLinksButton" class="btn btn-primary">שמור קישורים</button>
+            <p id="adminActivityLinksMessage" class="admin-message"></p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> כיתה ב2. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="script.js?v=20260627"></script>
+  </body>
+</html>

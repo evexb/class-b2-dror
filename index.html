@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>כיתה ב2 | האתר הרשמי</title>
+    <meta
+      name="description"
+      content="אתר כיתה ב2 עם מידע על הכיתה, פעילויות, לוח זמנים ויצירת קשר"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260627" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a href="index.html" class="brand">כיתה ב2</a>
+        <div class="menu-wrapper">
+          <button class="menu-toggle" aria-label="פתח תפריט" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="about.html">אודות</a>
+            <a href="activities.html">פעילויות</a>
+            <a href="schedule.html">לוח זמנים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="class-images.html">תמונות כיתתיות</a>
+            <a href="chat.html">צ'אט כיתתי</a>
+            <a href="#" id="adminMenuLink">מנהלת</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">ברוכים הבאים</p>
+          <h1 class="single-line-title">ברוכים הבאים לאתר של כיתה ב2</h1>
+          <div class="hero-image-wrap">
+            <img id="heroImage" src="classroom.svg" alt="תמונת ראשית של כיתה ב2" class="hero-image" />
+          </div>
+          <input id="heroImageInput" type="file" accept="image/*" hidden />
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> כיתה ב2. כל הזכויות שמורות. מנהלת האתר: ענבר וקסברג</p>
+    </footer>
+
+    <script src="script.js?v=20260627"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>צ'אט כיתתי | כיתה ב2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero small-hero">
+      <nav class="navbar">
+        <a href="index.html" class="brand">כיתה ב2</a>
+        <div class="menu-wrapper">
+          <button class="menu-toggle" aria-label="פתח תפריט" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="about.html">אודות</a>
+            <a href="activities.html">פעילויות</a>
+            <a href="schedule.html">לוח זמנים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="class-images.html">תמונות כיתתיות</a>
+            <a href="chat.html">צ'אט כיתתי</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content page-content">
+        <div class="hero-copy">
+          <p class="eyebrow">צ'אט כיתתי</p>
+          <h1>כאן אפשר לשתף רעיונות, הודעות ותחושות</h1>
+          <p class="hero-text">
+            הדף הזה נועד בשביל שיתוף דברים פשוטים, תגובות, שאלות או ברכות מהכיתה.
+          </p>
+          <a href="index.html" class="btn btn-secondary">חזרה לדף הבית</a>
+          <div class="chat-window">
+            <div id="chatMessages" class="chat-messages"></div>
+            <form id="chatForm" class="chat-form">
+              <input id="chatInput" type="text" placeholder="כתוב הודעה..." autocomplete="off" required />
+              <button type="submit" class="btn btn-primary">שלח</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-title">
+          <h2>רעיונות לשימוש בצ'אט</h2>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3>שאלות</h3>
+            <p>אפשר לשאול שאלות, לבקש עזרה או לחלוק משהו חדש.</p>
+          </article>
+          <article class="card">
+            <h3>ברכות</h3>
+            <p>מוזמנים לשלוח ברכות לחברים, למורים או למנהלת ענבר.</p>
+          </article>
+          <article class="card">
+            <h3>הודעות כיתה</h3>
+            <p>כל דבר קטן יכול להפוך להודעה כיפית ומחבקת.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> כיתה ב2. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

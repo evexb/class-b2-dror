@@ -1,0 +1,22 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="28" fill="#F6FBFF"/>
+  <rect x="70" y="90" width="660" height="350" rx="24" fill="#DDECFB"/>
+  <rect x="110" y="120" width="240" height="180" rx="16" fill="#F8FCFF"/>
+  <rect x="380" y="120" width="250" height="180" rx="16" fill="#F8FCFF"/>
+  <rect x="120" y="300" width="220" height="100" rx="16" fill="#9AD0FF"/>
+  <rect x="390" y="300" width="230" height="100" rx="16" fill="#87C4FF"/>
+  <rect x="150" y="150" width="70" height="70" rx="12" fill="#3B82F6"/>
+  <circle cx="184" cy="184" r="22" fill="#F9D65C"/>
+  <rect x="245" y="150" width="60" height="70" rx="12" fill="#6EE7B7"/>
+  <rect x="420" y="150" width="70" height="70" rx="12" fill="#F59E0B"/>
+  <circle cx="455" cy="184" r="22" fill="#FB923C"/>
+  <rect x="520" y="150" width="70" height="70" rx="12" fill="#A78BFA"/>
+  <rect x="140" y="320" width="180" height="20" rx="10" fill="#FFFFFF"/>
+  <rect x="140" y="350" width="140" height="16" rx="8" fill="#FFFFFF"/>
+  <rect x="410" y="320" width="180" height="20" rx="10" fill="#FFFFFF"/>
+  <rect x="410" y="350" width="120" height="16" rx="8" fill="#FFFFFF"/>
+  <rect x="600" y="120" width="10" height="180" rx="5" fill="#60A5FA"/>
+  <rect x="620" y="120" width="10" height="180" rx="5" fill="#60A5FA"/>
+  <rect x="120" y="60" width="140" height="24" rx="12" fill="#1D4ED8"/>
+  <text x="140" y="76" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">כיתה ב2</text>
+</svg>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>פעילויות | כיתה ב2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero small-hero">
+      <nav class="navbar">
+        <a href="index.html" class="brand">כיתה ב2</a>
+        <div class="menu-wrapper">
+          <button class="menu-toggle" aria-label="פתח תפריט" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a href="index.html">דף הבית</a>
+            <a href="about.html">אודות</a>
+            <a href="activities.html">פעילויות</a>
+            <a href="schedule.html">לוח זמנים</a>
+            <a href="contact.html">צור קשר</a>
+            <a href="class-images.html">תמונות כיתתיות</a>
+            <a href="chat.html">צ'אט כיתתי</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero-content page-content">
+        <div class="hero-copy">
+          <p class="eyebrow">פעילויות</p>
+          <h1>מה קורה בכיתה?</h1>
+          <p class="hero-text">
+            בכיתה ב2 יש המון פעילויות מהנות, יצירתיות ולמידה דרך משחק.
+          </p>
+          <a href="index.html" class="btn btn-secondary">חזרה לדף הבית</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="about-grid">
+          <article class="card">
+            <h3>יום יצירה</h3>
+            <p>עבודות יד, צבעים ורעיונות מיוחדים.</p>
+            <a id="screencastLinkDisplay" href="#" class="btn btn-primary" style="display:none;">קטעו שירטונים</a>
+          </article>
+          <article class="card">
+            <h3>קריאה משותפת</h3>
+            <p>סיפורים, ספרים ושיח מקסים סביב הדמיון.</p>
+          </article>
+          <article class="card">
+            <h3>משחקי למידה</h3>
+            <p>חידות, משחקים ופעילויות שמפתחים חשיבה.</p>
+            <a id="gamesLinkDisplay" href="#" class="btn btn-primary" style="display:none;">קטעו משחקים</a>
+          </article>
+        </div>
+        <div id="zoomLinkSection" style="display:none; margin-top:1.5rem;">
+          <a id="zoomLinkDisplay" href="#" class="btn btn-primary btn-large">טלטלי זואמ</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> כיתה ב2. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
